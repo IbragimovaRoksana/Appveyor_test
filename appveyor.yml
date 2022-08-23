@@ -10,7 +10,7 @@ services:
   - docker # будем использовать сервис для работы
 install:
     # Get the latest stable version of Node.js or io.js
-  - ps: Install-Product node nodejs_version
+  - ps: sudo Install-Product node nodejs_version
     # install modules
   - npm install
   - ps: sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
