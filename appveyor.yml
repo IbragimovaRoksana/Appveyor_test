@@ -14,7 +14,7 @@ install:
   - ps: sudo curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh
   - ps: sudo bash nodesource_setup.sh
   - ps: sudo apt install nodejs
-  - ps: cd /gate-simulator
+  - ps: cd ./gate-simulator
   - npm start
   - ps: cd ..
   - sleep 10
