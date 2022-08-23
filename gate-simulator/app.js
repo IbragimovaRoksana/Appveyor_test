@@ -2,10 +2,10 @@ const fs = require('fs');
 const express = require('express');
 const uuidv4 = require('uuid/v4');
 
-const data = JSON.parse(fs.readFileSync('data.json', 'UTF-8', (err, data) => {
+const data = fs.readFileSync('data.json', 'UTF-8', (err, data) => {
   if (err) throw err;
   console.log(data);
-}));
+});
 
 
 const server = express();
