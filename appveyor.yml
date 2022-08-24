@@ -22,9 +22,9 @@ install:
 
 test_script:
   - ps: chmod +x gradlew
-  - ps: ./gradlew test --info "-D selenide.headless=true"  # стартуем Selenide в Headless-режиме
+  - ps: ./gradlew test --info "-Dselenide.headless=true"  # стартуем Selenide в Headless-режиме
 
 build_script:
   - sleep 10
-  - ps: sudo chmod +x ./gradlew
-  - ps: ./gradlew test -D selenide.headless=true -Durlbd=jdbc:mysql://localhost:3306/app
+  - sudo chmod +x ./gradlew
+  - ./gradlew test -Dselenide.headless=true -Durlbd=jdbc:mysql://localhost:3306/app
