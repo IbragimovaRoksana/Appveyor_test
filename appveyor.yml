@@ -23,7 +23,7 @@ install:
 test_script:
   - sleep 10
   - ps: chmod +x gradlew
-  - ps: ./gradlew test --info "-Dselenide.headless=true"  # стартуем Selenide в Headless-режиме
+  - ps: ./gradlew test --info "-D selenide.headless=true"  # стартуем Selenide в Headless-режиме
 
 build_script:
   - sleep 10
