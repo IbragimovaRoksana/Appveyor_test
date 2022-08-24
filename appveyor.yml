@@ -17,7 +17,7 @@ install:
   - ps: sudo bash nodesource_setup.sh
   - ps: sudo apt install nodejs
   - npm start --prefix ./gate-simulator &
-  - sleep 10
+  # - sleep 10
   - java -Dspring.datasource.url=jdbc:mysql://localhost:3306/app -jar aqa-shop.jar &
 
 test_script:
